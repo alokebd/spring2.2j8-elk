@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "a2abd884-6470-4141-8205-636f835d3c4a",
+		"name": "Spring-ELK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "Get User(Fond)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9898/api/elk/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User(Not Found)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9898/api/elk/users/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9898/api/elk/exception"
+			},
+			"response": []
+		}
+	]
+}
